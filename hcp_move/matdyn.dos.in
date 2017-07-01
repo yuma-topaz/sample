@@ -1,0 +1,5 @@
+&input                                                                                           
+    asr='simple',  amass(1)=55.845,                                                                
+    flfrc='Fe444.fc', flfrq='Fe444.freq', la2F=.true., dos=.true.                                 
+    fldos='phonon.dos', nk1=10, nk2=10, nk3=10, ndos=50                                           
+ /      

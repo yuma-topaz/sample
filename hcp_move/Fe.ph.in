@@ -1,0 +1,17 @@
+Electron-phonon coefficients for Fe
+ &inputph
+  tr2_ph=1.0d-14,
+  prefix='Fe',
+  fildvscf='fedv',
+  max_seconds=1500
+  amass(1)=55.845,
+  outdir='./work/',
+  fildyn='Fe.dyn',
+  electron_phonon='interpolated',
+  el_ph_sigma=0.005, 
+  el_ph_nsigma=10,
+  trans=.true.,
+  ldisp=.true.
+  nq1=4, nq2=4, nq3=4
+ /
+

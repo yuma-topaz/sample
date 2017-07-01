@@ -1,0 +1,3 @@
+ &input                                                                                           
+  zasr='simple',  fildyn='Fe.dyn', flfrc='Fe444.fc', la2F=.true. 
+/                                 

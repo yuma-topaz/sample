@@ -1,0 +1,36 @@
+ &control
+    calculation='scf'
+    restart_mode='from_scratch',
+    prefix='Fe',
+    pseudo_dir = './',
+    outdir='./work/'
+    max_seconds = 80000
+    wf_collect=.true.
+ /
+ &system
+    ibrav=  4,
+    celldm(1) =4.65317675552, 
+    celldm(3)=1.58360617568,
+    nat= 2,
+    ntyp= 1,
+    nspin=2,
+    starting_magnetization(1)=1.0,
+    ecutwfc =100.0,
+    ecutrho = 500.0,
+    occupations='smearing',
+    smearing='m-p',
+    degauss=0.01,
+    la2F = .true.,
+ /
+ &electrons
+    conv_thr =  1.0d-8
+    mixing_beta = 0.7
+ /
+ATOMIC_SPECIES
+ Fe  55.845 Fe.pbe-spn-rrkjus_psl.0.2.1.UPF
+ATOMIC_POSITIONS
+Fe 0.33333333	0.66666666 0.75
+Fe 0.66666666   0.33333333 0.25
+K_POINTS {automatic}
+ 24 24 24  0 0 0
+

@@ -1,0 +1,5 @@
+&projwfc
+ prefix = 'Fe'
+ outdir = './work'
+ degauss = 0.03
+/
